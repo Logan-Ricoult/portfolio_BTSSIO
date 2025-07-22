@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/image/background.jpeg);
+    background-size: 120%;
+    background-position: center;
+    overflow: hidden;
+    transition: background-position 0.1s ease-out, background-size 0.1s ease-out;
+}
+
+H1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+H2 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#background_video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+a.Menu_Principal,
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+a.Menu_Bas {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#Container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1500px;
+    flex-direction: column;
+}
+
+#Scene {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+}
+
+#Scene_Milieu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#Box_Gauche {
+    height: 300px;
+    width: 200px;
+    background: rgba(59, 57, 57, 0.712);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    border: 2.5px solid rgba(255, 255, 255, 0.089);
+    transform: perspective(500px) rotatey(15deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Menu_Principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Menu_Bas {
+    display: flex;
+    gap: 55px;
+}
+
+img {
+    margin-right: 15px;
+}
+
+.Text_Menu_Principal {
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+}
+
+.Text_Menu_Bas {
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-out;
+    border-radius: 5px;
+}
+
+.Text_Menu_Principal:hover {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.281);
+
+}
+
+.Text_Menu_Bas:hover {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.281);
+
+}
+
+#Box_Milieu {
+    height: 550px;
+    width: 1000px;
+    background: rgba(59, 57, 57, 0.712);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 2.5px solid rgba(255, 255, 255, 0.089);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#Zone_Haute {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Zone_Basse {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Bouton {
+    color: black;
+    text-decoration: none;
+}
+
+#Haute_Gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#Texte_Logan {
+    font-size: 12px;
+}
+
+#Titre_Logan {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#Photo_logan {
+    height: 120px;
+    border-radius: 100px;
+}
+
+#Savoir_plus {
+    width: 100px;
+    height: 40px;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    font-size: 12px;
+    background-color: white;
+}
+
+
+.Carte {
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 7px 7px 20px rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
+.Carte:hover{
+    box-shadow: 7px 7px 20px rgba(124, 119, 119, 0.205);
+}
+
+
+.Carte_body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Body_parcours {
+    background: rgba(255, 0, 255, 0.5) url(image/img_carteparcours.png);
+    background-size:cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border: 0px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+#Body_parcours:hover {
+    border: 1.5mm ridge rgba(255, 0, 255, 0.5);
+}
+
+
+
+#Body_veilles {
+    background: rgba(33, 185, 255, 0.5) url(image/img_carteveille.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border: 0px solid transparent;
+    transition: 0.2s;
+}
+
+#Body_veilles:hover {
+border: 1.5mm ridge rgba(33, 185, 255, 0.5);
+}
+
+#Body_epreuve {
+    background: rgba(21, 255, 0, 0.6) url(image/img_carteeprevue.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border: 0px solid transparent;
+    transition: 0.2s linear;
+}
+
+#Body_epreuve:hover{
+    border: 1.5mm ridge rgba(21, 255, 0, 0.6); 
+
+}
+
+#Body_projet {
+    background:rgba(255, 0, 0, 0.6)  url(image/img_carteparcours.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border: 0px solid transparent;
+    transition: 0.2s;
+}
+
+#Body_projet:hover{
+    border: 1.5mm ridge rgba(255, 0, 0, 0.6);
+}
+
+.Carte_title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 3px 2px rgba(0, 0, 0);
+}
+
+
+#Box_Droite {
+    height: 600px;
+    width: 400px;
+    background: rgba(59, 57, 57, 0.712);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 2.5px solid rgba(255, 255, 255, 0.089);
+    transform: perspective(500px) rotatey(-15deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+#Box_Basse {
+    height: 60px;
+    width: 640px;
+    background: rgba(59, 57, 57, 0.712);
+    border-radius: 40px;
+    backdrop-filter: blur(2px);
+    border: 2.5px solid rgba(255, 255, 255, 0.089);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    pointer-events: all;
+}
+
+.page-overlay .overlay-top,
+.page-overlay .overlay-bottom {
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 1);
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.page-overlay.hidden .overlay-top {
+    transform: translateY(-100%);
+    background: rgba(0, 0, 0, 0);
+}
+
+.page-overlay.hidden .overlay-bottom {
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, 0);
+}
+
+
+.page-overlay.hidden {
+    pointer-events: none;
+}
+
+
+.transition-active .overlay-top,
+.transition-active .overlay-bottom {
+    background: rgba(0, 0, 0, 1);
+}
