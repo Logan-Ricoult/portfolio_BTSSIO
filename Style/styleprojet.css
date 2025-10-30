@@ -1,0 +1,181 @@
+#Box_Droite_projet {
+  height: 600px;
+  width: 400px;
+  background: rgba(59, 57, 57, 0.712);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  border: 2.5px solid rgba(255, 255, 255, 0.089);
+  transform: perspective(500px) rotatey(-15deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+#Scene_projet {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow: auto;
+}
+
+#Box_Haut {
+    display: flex;
+    height: 100px;
+    width: 700px;
+    background: rgba(59, 57, 57, 0.712);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 2.5px solid rgba(255, 255, 255, 0.089);
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Titre_Projet{
+  font-size: 45px;
+}
+
+#Carte_Projet_mastermind {
+  width: 250px;
+  height: 330px;
+  background-image: url(../image/img_projet/mastermind.png);
+  background-size: 120%;
+  border-radius: 10px;
+  border: 3px solid rgba(255, 221, 27, 0.493);
+  box-shadow: 2px 2px 15px 3px rgba(255, 221, 27, 0.493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Carte_Projet_decoupage {
+  width: 250px;
+  height: 330px;
+  background-image: url(../image/img_projet/decoupage.png);
+  background-size: 120%;
+  border-radius: 10px;
+  border: 3px solid rgba(255, 221, 27, 0.493);
+  box-shadow: 2px 2px 15px 3px rgba(255, 221, 27, 0.493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Carte_Projet_mapping {
+  width: 250px;
+  height: 330px;
+  background-image: url(../image/img_projet/mapping.png);
+  background-size: 110%;
+  background-position: center;
+  border-radius: 10px;
+  border: 3px solid rgba(255, 221, 27, 0.493);
+  box-shadow: 2px 2px 15px 3px rgba(255, 221, 27, 0.493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Carte_Projet_chevalier {
+  width: 250px;
+  height: 330px;
+  background-image: url(../image/img_projet/chevalier.png);
+  background-size: 110%;
+  background-position: center;
+  border-radius: 10px;
+  border: 3px solid rgba(255, 221, 27, 0.493);
+  box-shadow: 2px 2px 15px 3px rgba(255, 221, 27, 0.493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Zone_Carte_Projet {
+  width: 220px;
+  height: 310px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+.Zone_Carte_Haut {
+  display: flex;
+  justify-content: flex-end;
+  height: 50%;
+}
+
+.BTN_Projet {
+  background: linear-gradient(145deg, #fde047, #facc15);
+  color: #422006;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: auto;
+  min-width: 120px;
+  max-width: 85%;
+  margin: 8px;
+  height: 40px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow:
+    inset 2px 2px 4px rgba(160, 110, 0, 0.6),
+    inset -2px -2px 4px rgba(255, 245, 200, 0.5),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BTN_Projet:hover {
+  background: linear-gradient(145deg, #feec80, #fde047);
+  box-shadow:
+    inset 2px 2px 5px rgba(160, 110, 0, 0.5),
+    inset -2px -2px 5px rgba(255, 245, 200, 0.6),
+    0 2px 4px rgba(0, 0, 0, 0.15);
+  transform: translateZ(40px) translateY(-2px);
+  color: #3f2810;
+  cursor: pointer;
+}
+
+.BTN_Projet:active {
+  background: linear-gradient(145deg, #facc15, #eab308);
+  box-shadow:
+    inset -2px -2px 4px rgba(160, 110, 0, 0.6),
+    inset 2px 2px 4px rgba(255, 245, 200, 0.5),
+    0 0 0 rgba(0, 0, 0, 0);
+  transform: translateZ(40px) translateY(0px);
+}
+
+.Categorie_Projet {
+  background: linear-gradient(145deg, #fde047, #facc15);
+  color: #422006;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: auto;
+  min-width: 80px;
+  max-width: 85%;
+  margin: 8px;
+  height: 40px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow:
+    inset 2px 2px 4px rgba(160, 110, 0, 0.6),
+    inset -2px -2px 4px rgba(255, 245, 200, 0.5),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Titre_Carte_Projet {
+  font-weight: 800px;
+  color: White;
+  margin: 15px;
+}
+
+.Description_Carte_Projet {
+  margin-left: 15px;
+}
